@@ -83,7 +83,7 @@ Rancher支持添加云提供商（例如AWS，DigitalOcean，阿里云，vSphere
 
 ### 主机标签
 
-在Rancher中，可以通过添加标签的方式来管理某台主机，做法就是在 `rancher/agnet` 容器启动的时候，以环境变量的方法把标签加进去。在操作界面上可以看到，标签其实是一些键不可以重复的键值对。值得注意的是，如果有两个相同的键但是值不一样，那么最后添加的值将会被Rancher使用。
+在Rancher中，可以通过添加标签的方式来管理某台主机，做法就是在 `rancher/agent` 容器启动的时候，以环境变量的方法把标签加进去。在操作界面上可以看到，标签其实是一些键不可以重复的键值对。值得注意的是，如果有两个相同的键但是值不一样，那么最后添加的值将会被Rancher使用。
 
 给主机增加标签后，你可以根据需求来[调度服务／负载均衡]({{site.baseurl}}/rancher/{{page.version}}/{{page.lang}}/cattle/scheduling/)。如果不希望某个服务运行在某台主机上或者要求某个服务必须运行在某台主机上，可以在[添加服务]({{site.baseurl}}/rancher/{{page.version}}/{{page.lang}}/cattle/adding-services/)时通过主机标签来进行配置。
 
